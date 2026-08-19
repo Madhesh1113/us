@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #FAF7F2;
+  --surface: #FFFFFF;
+  --surface-sunken: #F1ECE3;
+  --ink: #2B2621;
+  --ink-soft: #6E6558;
+  --ink-faint: #A79C8A;
+  --border: #E5DDCE;
+
+  --red: #C9705F;
+  --red-bg: #F7E7E2;
+  --red-border: #E8C4B8;
+
+  --green: #6E9271;
+  --green-bg: #E6EEE2;
+  --green-border: #C7DBC3;
+
+  --accent: #C9793C;
+  --accent-soft: #F0DCC3;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  --radius: 18px;
+  --radius-sm: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+input {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+[data-mode='dark'] {
+  --bg: #1E1B17;
+  --surface: #2A2620;
+  --surface-sunken: #35302A;
+  --ink: #F1ECE3;
+  --ink-soft: #B8AE9E;
+  --ink-faint: #837A6C;
+  --border: #443E35;
+
+  --red: #E08C7B;
+  --red-bg: #3A2620;
+  --red-border: #5C382E;
+
+  --green: #8FBB92;
+  --green-bg: #223226;
+  --green-border: #3A5340;
+
+  --accent: #E0A15C;
+  --accent-soft: #4A3A22;
+}
